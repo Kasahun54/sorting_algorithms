@@ -1,9 +1,9 @@
 #include "sort.h"
-
 /**
-  * dlistint_len - count number of nodes of a doubly linked list.
-  * @h: pointer to first node.
-  * Return: number of nodes.
+  * dlistint_len - nodes in doubly linked list
+  * @h: pointer to first node
+  * 
+  * Return: number of nodes
   */
 size_t dlistint_len(const listint_t *h)
 {
@@ -22,11 +22,12 @@ size_t dlistint_len(const listint_t *h)
 }
 
 /**
-  * swap - swap two nodes of a linked list.
-  * @head: address of pointer to head of list.
-  * @cursor1: node first node.
-  * @cursor2: node previous to @cursor1.
-  * Return: pointer to first node.
+  * swap - exchange nodes in linked list
+  * @head: address of pointer to head of list
+  * @cursor1: first node
+  * @cursor2: previous of the first node
+  * 
+  * Return: point to first node
   */
 listint_t *swap(listint_t **head, listint_t *cursor1, listint_t *cursor2)
 {
@@ -48,9 +49,10 @@ listint_t *swap(listint_t **head, listint_t *cursor1, listint_t *cursor2)
 }
 
 /**
-  * insertion_sort_list - sort a doubly linked list of integers using
-  * insertion sort.
-  * @list: address of pointer to head of linked list.
+  * insertion_sort_list - sort a doubly linked list in insertion sort
+  * @list: address of pointer to head
+  * 
+  * Return: Nothing
   */
 void insertion_sort_list(listint_t **list)
 {
